@@ -1,0 +1,14 @@
+{
+	"category" : "Scheduler",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"MilliSecondOffset" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MillisecondClockOffset",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

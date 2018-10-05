@@ -1,0 +1,16 @@
+{
+	"category" : "Scheduler",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"running",
+		"tasks",
+		"accessProtect" ],
+	"name" : "TaskScheduler",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

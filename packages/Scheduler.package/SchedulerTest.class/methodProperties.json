@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "pre 5/25/2018 20:32",
+		"tearDown" : "pre 5/25/2018 20:32",
+		"testDailyTaskDoesntGetsAheadIfRunExplicitly" : "pre 5/25/2018 20:32",
+		"testNewTaskScheduledToRunEarlierInDayGetsRescheduledLaterInDay" : "pre 5/25/2018 20:32",
+		"testRunAtSomeTimeInTheFuture" : "pre 5/25/2018 20:32",
+		"testRunDailyTask" : "pre 5/25/2018 20:32",
+		"testRunDailyTaskNeverGetsBehind" : "pre 5/25/2018 20:32",
+		"testRunEveryOtherHourOnTheHour" : "pre 5/25/2018 20:32",
+		"testRunEveryQuarterSecond" : "pre 5/25/2018 20:32",
+		"testRunEverySecond" : "pre 5/25/2018 20:32",
+		"testRunInASecond" : "pre 5/25/2018 20:32",
+		"testRunOnceInPastRunsOnce" : "pre 5/25/2018 20:32",
+		"testRunOnlyOnceWithFullyQualifiedDateAndTime" : "pre 5/25/2018 20:32",
+		"testRunOnlyOnceWithOnlyTimeSpecified" : "pre 5/25/2018 20:32",
+		"testRunSeveralTasks" : "pre 5/25/2018 20:32",
+		"testRunUsingCustomSchedule" : "pre 5/25/2018 20:32",
+		"testRunUsingCustomScheduleThatEnds" : "pre 5/25/2018 20:32" } }

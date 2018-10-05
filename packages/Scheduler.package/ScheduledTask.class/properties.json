@@ -1,0 +1,20 @@
+{
+	"category" : "Scheduler",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"description",
+		"scheduler",
+		"task",
+		"runHistory",
+		"workerProcess",
+		"schedule",
+		"nextRunTime" ],
+	"name" : "ScheduledTask",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
