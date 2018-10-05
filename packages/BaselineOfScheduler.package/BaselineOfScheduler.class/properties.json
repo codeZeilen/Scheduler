@@ -1,14 +1,14 @@
 {
-	"category" : "Scheduler-Tests",
+	"category" : "BaselineOfScheduler",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"scheduler" ],
-	"name" : "SchedulerTest",
+		 ],
+	"name" : "BaselineOfScheduler",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "BaselineOf",
 	"type" : "normal" }

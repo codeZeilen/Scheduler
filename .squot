@@ -1,3 +1,4 @@
 OrderedDictionary {
+	'packages\/BaselineOfScheduler.package' : #SquotCypressCodeSerializer,
 	'packages\/Scheduler.package' : #SquotCypressCodeSerializer
 }
