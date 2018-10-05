@@ -1,1 +1,1 @@
-SmalltalkCISpec {  #loading : [    SCIMetacelloLoadSpec {      #baseline : 'Scheduler',      #directory : 'packages',      #platforms : [ #squeak ]    }  ],  #testing : {    #categories : [ 'Schedule-*' ],    #coverage : {      #categories : [ 'Schedule-*' ]    }  }}
+SmalltalkCISpec {  #loading : [    SCIMetacelloLoadSpec {      #baseline : 'Scheduler',      #directory : 'packages',      #platforms : [ #squeak ]    }  ],  #testing : {    #categories : [ 'Scheduler-*' ],    #coverage : {      #categories : [ 'Scheduler-*' ]    }  }}
