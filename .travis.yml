@@ -1,0 +1,1 @@
+language: smalltalksudo: falsesmalltalk:  - Squeak-trunk  os:  - linux  - osx
