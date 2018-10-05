@@ -1,14 +1,14 @@
-as yet unclassified
+tests
 testNewTaskScheduledToRunEarlierInDayGetsRescheduledLaterInDay
 
 	| message when task |
 
-	when := (DateAndTime now - 1 minute) asTime.
+	when := DateAndTime now - 1 minute.
 	
 	task := scheduler do: [message := 'task ran'] at: when.
 	
-	1.1 seconds asDelay wait.
+	1.1 seconds wait.
 
-	self should: [message isNil].
-	self should: [scheduler taskCount = 1].
-	self should: [task nextRunTime = (DateAndTime date: (Date today addDays: 1) time: when)]
+	self assert: message isNil.
+	self assert: 1 equals: scheduler taskCount.
+	self assert: (when + 1 days) floor equals: task nextRunTime floor

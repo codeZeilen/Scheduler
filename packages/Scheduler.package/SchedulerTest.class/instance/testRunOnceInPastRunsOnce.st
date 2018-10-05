@@ -1,10 +1,10 @@
-as yet unclassified
+tests
 testRunOnceInPastRunsOnce
 
 	| message |
 	scheduler doOnce: [message := 'task ran'] at: (DateAndTime now - 1 second).
 	
-	1 second asDelay wait.
+	1 second wait.
 	
-	self should: [message = 'task ran'].
-	self should: [scheduler taskCount = 0]
+	self assert: 'task ran' equals: message.
+	self assert: 0 equals: scheduler taskCount.

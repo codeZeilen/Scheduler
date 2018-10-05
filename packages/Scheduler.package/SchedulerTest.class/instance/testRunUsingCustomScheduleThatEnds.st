@@ -1,5 +1,7 @@
-as yet unclassified
+tests
 testRunUsingCustomScheduleThatEnds
+
+	<timeout: 10>
 
 	| runCount schedule |
 	runCount := 0.
@@ -8,7 +10,7 @@ testRunUsingCustomScheduleThatEnds
 	schedule schedule: {1 second. 2 seconds}.
 	
 	scheduler do: [runCount := runCount + 1] following: schedule.
-	5.1 seconds asDelay wait.
+	5.1 seconds wait.
 	
-	self should: [runCount = 3].
-	self should: [scheduler taskCount = 0]
+	self assert: 3 equals: runCount.
+	self assert: 0 equals: scheduler taskCount.

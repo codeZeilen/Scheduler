@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testRunUsingCustomSchedule
 
 	| runCount schedule |
@@ -8,7 +8,7 @@ testRunUsingCustomSchedule
 	schedule schedule: {1 second. 2 seconds. 20 seconds}.
 	
 	scheduler do: [runCount := runCount + 1] following: schedule.
-	3.1 seconds asDelay wait.
+	3.1 seconds wait.
 	
-	self should: [runCount = 2].
-	self should: [scheduler taskCount = 1]
+	self assert: 2 equals: runCount.
+	self assert: 1 equals: scheduler taskCount.

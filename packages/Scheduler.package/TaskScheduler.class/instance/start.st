@@ -1,8 +1,6 @@
 executing
 start
 
-	<rackOperationLabel: 'start' inContextMenus: true>
-
 	| process |
 	running ifTrue: [^ self].
 	
@@ -10,7 +8,7 @@ start
 	
 	process := [
 		[running] whileTrue: 
-			[0.25 seconds asDelay wait.
+			[0.25 seconds wait.
 			self tasksDo: [:each | each runIfNecessary]]] newProcess.
 	
 	(process respondsTo: #name:) ifTrue: [process name: 'taskScheduler'].

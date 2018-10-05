@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testRunEveryQuarterSecond
 
 	| runCount |
@@ -8,5 +8,5 @@ testRunEveryQuarterSecond
 	
 	900 milliSeconds asDelay wait.
 	
-	self should: [runCount = 3].
-	self should: [scheduler taskCount = 1]
+	self assert: 3 equals: runCount.
+	self assert: 1 equals: scheduler taskCount.

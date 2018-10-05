@@ -1,12 +1,12 @@
-as yet unclassified
+tests
 testDailyTaskDoesntGetsAheadIfRunExplicitly
 
 	| task |
 
 	task := scheduler do: ['task ran'] at: DateAndTime now + 10 seconds.
 	
-	self should: [task nextRunTime asDate = Date today].
+	self assert: Date today equals: task nextRunTime asDate.
 	
 	task run. "run explicitly before scheduled time"
 	
-	self should: [task nextRunTime asDate = Date today].
+	self assert: Date today equals: task nextRunTime asDate.

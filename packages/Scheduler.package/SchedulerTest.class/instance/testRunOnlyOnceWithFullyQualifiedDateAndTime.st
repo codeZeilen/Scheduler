@@ -1,11 +1,11 @@
-as yet unclassified
+tests
 testRunOnlyOnceWithFullyQualifiedDateAndTime
 
 	| runCount |
 	runCount := 0.
 	scheduler doOnce: [runCount := runCount + 1] at: (DateAndTime now + 1 seconds).
 	
-	1.1 seconds asDelay wait.
+	1.1 seconds wait.
 	
-	self should: [runCount = 1].
-	self should: [scheduler taskCount = 0]
+	self assert: 1 equals: runCount..
+	self assert: 0 equals: scheduler taskCount.

@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testRunEverySecond
 
 	| runCount |
@@ -6,7 +6,7 @@ testRunEverySecond
 
 	scheduler do: [runCount := runCount + 1] every: 1 second.
 	
-	3.1 seconds asDelay wait.
+	2.5 seconds wait.
 	
-	self should: [runCount = 3].
-	self should: [scheduler taskCount = 1]
+	self assert: 3 equals: runCount.
+	self assert: 1 equals: scheduler taskCount.

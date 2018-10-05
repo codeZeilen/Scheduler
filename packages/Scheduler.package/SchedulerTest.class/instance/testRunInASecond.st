@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testRunInASecond
 
 	| ranWhen now |
@@ -6,6 +6,6 @@ testRunInASecond
 	
 	scheduler do: [ranWhen := DateAndTime now] at: (now + 1 seconds).
 	
-	1.1 seconds asDelay wait.
+	1.2 seconds wait.
 
-	self should: [ranWhen = (now + 1 seconds)]
+	self assert: (now + 1 seconds) floor equals: ranWhen floor

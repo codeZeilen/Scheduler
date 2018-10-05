@@ -1,14 +1,14 @@
-as yet unclassified
+tests
 testRunDailyTask
 
 	| message when task |
 
-	when := (DateAndTime now + 1 second) asTime.
+	when := DateAndTime now + 1 second.
 	
 	task := scheduler do: [message := 'task ran'] at: when.
 	
-	1.1 seconds asDelay wait.
+	1.1 seconds wait.
 
-	self should: [message = 'task ran'].
-	self should: [scheduler taskCount = 1].
-	self should: [task nextRunTime = (DateAndTime date: (Date today addDays: 1) time: when)]
+	self assert: 'task ran' equals: message.
+	self assert: 1 equals: scheduler taskCount.
+	self assert: (when + 1 days) floor equals: task nextRunTime floor.
