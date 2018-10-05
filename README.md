@@ -1,4 +1,4 @@
-# Scheduler
+# Scheduler [![Build Status](https://travis-ci.org/codeZeilen/Scheduler.svg?branch=master)](https://travis-ci.org/codeZeilen/Scheduler) [![Coverage Status](https://coveralls.io/repos/github/codeZeilen/Scheduler/badge.svg?branch=master)](https://coveralls.io/github/codeZeilen/Scheduler?branch=master)
 A Squeak/Smalltalk task scheduler similar to cron.
 
 This is a fork from the original Scheduler package provided by John Pierce. The original project remains largely unchanged except for some adjustments to match the present-day Squeak standard library. The license is MIT as with the original source code.
