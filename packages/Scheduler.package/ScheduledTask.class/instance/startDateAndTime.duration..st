@@ -6,7 +6,7 @@ startDateAndTime: aDateAndTime duration: aDuration
 	 
 	nextRunTime := ((timeParameter isKindOf: Time)
 		ifTrue:
-			[DateAndTime date: Date today time: timeParameter]
+			[DateAndTime today + timeParameter]
 		ifFalse:
 			[timeParameter]).
 			
