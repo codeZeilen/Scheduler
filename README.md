@@ -45,6 +45,7 @@ scheduler
 (scheduler taskAt: 1) delete
 
 "Stop the scheduler from running -- but don't delete its tasks"
-scheduler stop.```
+scheduler stop.
+```
 
 Read the provided tests for more examples.
