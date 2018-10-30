@@ -1,1 +1,10 @@
-language: smalltalksudo: falsesmalltalk:  - Squeak-trunk  os:  - linux  - osx
+language: smalltalk
+sudo: false
+
+smalltalk:
+- Squeak-trunk
+- Squeak-5.2
+
+os:
+- linux
+- osx
