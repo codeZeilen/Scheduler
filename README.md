@@ -3,6 +3,18 @@ A Squeak/Smalltalk task scheduler similar to cron.
 
 This is a fork from the original Scheduler package provided by John Pierce. The original project remains largely unchanged except for some adjustments to match the present-day Squeak standard library. The license is MIT as with the original source code.
 
+## How to install
+1. Get [Squeak 4.6 or later](http://www.squeak.org)
+2. Load [Metacello](https://github.com/metacello/metacello)
+3. Finally, load Scheduler with the following command:
+
+```Smalltalk
+Metacello new
+  baseline: 'Scheduler';
+  repository: 'github://codezeilen/scheduler/packages';
+  load.
+```
+
 ## Usage
 Note: The following is based on the original SqueakMap description
 
